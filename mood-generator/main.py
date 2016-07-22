@@ -14,12 +14,29 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello world!')
 
+class SadHandler(webapp2.RequestHandler):
+    def get(self):
+
+class HappyHandler(webapp2.RequestHandler):
+    def get(self):
+
+class LitHandler(webapp2.RequestHandler):
+    def get(self):
+
+class TrumpHandler(webapp2.RequestHandler):
+    def get(self):
+
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/sad', SadHandler),
+    ('/happy', HappyHandler),
+    ('/lit', LitHandler),
+    ('/trump', TrumpHandler)
 ], debug=True)
