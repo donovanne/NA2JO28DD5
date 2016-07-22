@@ -16,22 +16,38 @@
 #
 
 import webapp2
+import jinja2
 
+#setting up jinja
+template_dir = os.path.join(os.path.dirname(__file__), 'templates')
+jinja_environment = jinja2.Environment(
+  loader=jinja2.FileSystemLoader(template_dir))
+
+#homepage handler
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        template = jinja_environment.get_template('index.html')
+        self.response.write(template.render())
 
 class SadHandler(webapp2.RequestHandler):
     def get(self):
+        template = jinja_environment.get_template('mood-pages.html')
+        self.response.write(template.render())
 
 class HappyHandler(webapp2.RequestHandler):
     def get(self):
+        template = jinja_environment.get_template('mood-pages.html')
+        self.response.write(template.render())
 
 class LitHandler(webapp2.RequestHandler):
     def get(self):
+        template = jinja_environment.get_template('mood-pages.html')
+        self.response.write(template.render())
 
 class TrumpHandler(webapp2.RequestHandler):
     def get(self):
+        template = jinja_environment.get_template('trump.html')
+        self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
