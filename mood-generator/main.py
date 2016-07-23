@@ -76,6 +76,9 @@ class FeedbackHandler(webapp2.RequestHandler):
         # putting feedback into datastore
         feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
 
+def get_time():
+    return datetime.datetime.fromtimestamp(time.time())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/sad', SadHandler),
