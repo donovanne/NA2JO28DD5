@@ -32,17 +32,17 @@ class MainHandler(webapp2.RequestHandler):
 class SadHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('mood-pages.html')
-        self.response.write(template.render())
+        self.response.write(template.render({"mood": "Sad"}))
 
 class HappyHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('mood-pages.html')
-        self.response.write(template.render())
+        self.response.write(template.render({"mood": "Happy"}))
 
 class LitHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('mood-pages.html')
-        self.response.write(template.render())
+        self.response.write(template.render({"mood": "Lit"}))
 
 class TrumpHandler(webapp2.RequestHandler):
     def get(self):
