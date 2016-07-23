@@ -14,9 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import os
-import webapp2
+import datetime
 import jinja2
+import os
+import random
+import time
+import webapp2
 from google.appengine.ext import ndb
 
 #setting up jinja
@@ -27,38 +30,51 @@ jinja_environment = jinja2.Environment(
 class FeedbackComment(ndb.Model):
     name = ndb.StringProperty(required=False)
     comment = ndb.StringProperty(required=True)
-    date_and_time = ndb.DateProperty(required=True)
+    theTime = ndb.DateProperty(required=True)
 
-#homepage handler
+#homepage
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('index.html')
-        self.response.write(template.render())
+        # the line below does the same as the following 3 commented lines
+        # I was unsure whether to favor less code or better readability, so yeah
+        # I'll leave the corresponding code in the other handlers as they were for now - Donovanne
+        self.response.write(jinja_environment.get_template('index.html').render())
+        # template = jinja_environment.get_template('index.html')
+        # html = template.render()
+        # self.response.write(html)
 
 class SadHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('mood-pages.html')
-        self.response.write(template.render({"mood": "Sad"}))
+        html = template.render({"mood": "Sad"})
+        self.response.write(html)
 
 class HappyHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('mood-pages.html')
-        self.response.write(template.render({"mood": "Happy"}))
+        html = template.render({"mood": "Happy"})
+        self.response.write(html)
 
 class LitHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('mood-pages.html')
-        self.response.write(template.render({"mood": "Lit"}))
+        html = template.render({"mood": "Lit"})
+        self.response.write(html)
 
 class TrumpHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('trump.html')
-        self.response.write(template.render())
+        html = template.render()
+        self.response.write()
 
 class FeedbackHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('feedback.html')
-        self.response.write(template.render())
+        html = template.render()
+        self.response.write()
+
+        # putting feedback into datastore
+        feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
