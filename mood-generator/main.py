@@ -17,11 +17,17 @@
 import os
 import webapp2
 import jinja2
+from google.appengine.ext import ndb
 
 #setting up jinja
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_environment = jinja2.Environment(
   loader=jinja2.FileSystemLoader(template_dir))
+
+class FeedbackComment(ndb.Model):
+    name = ndb.StringProperty(required=False)
+    comment = ndb.StringProperty(required=True)
+    date_and_time = ndb.DateProperty(required=True)
 
 #homepage handler
 class MainHandler(webapp2.RequestHandler):
@@ -49,10 +55,16 @@ class TrumpHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('trump.html')
         self.response.write(template.render())
 
+class FeedbackHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('feedback.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/sad', SadHandler),
     ('/happy', HappyHandler),
     ('/lit', LitHandler),
-    ('/trump', TrumpHandler)
+    ('/trump', TrumpHandler),
+    ('/feedback', FeedbackHandler)
 ], debug=True)
