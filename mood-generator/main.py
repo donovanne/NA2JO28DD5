@@ -71,10 +71,11 @@ class FeedbackHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('feedback.html')
         html = template.render()
-        self.response.write()
+        self.response.write(html)
 
         # putting feedback into datastore
         feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
+        feed.put()
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
