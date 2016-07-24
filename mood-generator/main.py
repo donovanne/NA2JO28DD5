@@ -73,7 +73,7 @@ class FeedbackHandler(webapp2.RequestHandler):
         html = template.render()
         self.response.write(html)
 
-def get_feedback(name, comment):
+def get_feedback(name, comment): # this isn't working yet
     theTime = datetime.datetime.fromtimestamp(time.time())
     # putting feedback into datastore
     feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
