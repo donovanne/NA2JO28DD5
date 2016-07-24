@@ -1,5 +1,7 @@
-.text
+.header
 {
   font-family: Fjalla One;
-  color: red
+  color: black;
+  font-size: 60px;
+  text-align: center;
 }
