@@ -73,12 +73,11 @@ class FeedbackHandler(webapp2.RequestHandler):
         html = template.render()
         self.response.write(html)
 
-        # putting feedback into datastore
-        feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
-        feed.put()
-
-def get_time():
-    return datetime.datetime.fromtimestamp(time.time())
+def get_feedback(name, comment): # this isn't working yet
+    theTime = datetime.datetime.fromtimestamp(time.time())
+    # putting feedback into datastore
+    feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
+    feed.put()
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
