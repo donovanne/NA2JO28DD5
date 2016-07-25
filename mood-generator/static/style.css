@@ -14,10 +14,11 @@ background-attachment: fixed;}
 
 #home_page_gifs
 {
+  text-align: center;
    height: 580px;
    width: 1050px;
-   margin-left: 250px;
-   margin-right: 250px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .home_gifs
@@ -32,6 +33,7 @@ background-attachment: fixed;}
 
 #to_the_back
 {
+  text-align: center;
   position: absolute;
   right: 100px;
   left: 240px;
