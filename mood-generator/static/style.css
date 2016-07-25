@@ -7,10 +7,12 @@
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-#body_index {
+#body_index
+{
 background-image: url(http://webdesigntunes.com/wp-content/uploads/2013/06/white-wood.jpg);
 background-size: cover;
-background-attachment: fixed;}
+background-attachment: fixed;
+}
 
 #home_page_gifs
 {
@@ -19,6 +21,12 @@ background-attachment: fixed;}
    width: 1050px;
    margin-left: auto;
    margin-right: auto;
+  background-image:url(http://www.vectordiary.com/wp-content/uploads/2013/12/magic-waves.jpg);
+  background-position:center;
+  height: 580px;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home_gifs
@@ -39,9 +47,10 @@ background-attachment: fixed;}
   left: 240px;
   top: 0px;
   z-index: -1;
+  margin: 0 auto;
 }
 
-#litleft
+#lit_left
 {
 
   font-family: 'Fjalla One', sans-serif;
@@ -55,14 +64,30 @@ background-attachment: fixed;}
   margin-top: 10px;
   margin-left: 20px;
   padding: 10px 10px 10px 10px;
-  border: 3px dotted rgba(74, 145, 227, 0.5);
+  border: 6px double rgba(74, 145, 227, 0.5);
+  border-radius: 20px;
   line-height: 10px;
   letter-spacing: 0px;
   margin-bottom: 20px;
-  background-color: rgba(143, 154, 255, 0.68));
+  background-color: rgba(143, 154, 255, 0.2);
 }
 
-#litright
+#lit_middle
+{
+
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+
+  width: auto;
+  padding: 10px;
+  margin-top: 0px;
+
+  display: block;
+}
+
+#lit_right
 {
   font-family: 'Fjalla One', sans-serif;
   color: black;
@@ -75,16 +100,60 @@ background-attachment: fixed;}
   margin-top: 10px;
   margin-left: 635px;
   padding: 10px 10px 10px 10px;
-  border: 3px dotted rgba(74, 145, 227, 0.5);
+  border: 6px double rgba(74, 145, 227, 0.5);
+  border-radius: 20px;
   line-height: 10px;
   letter-spacing: 0px;
   margin-bottom: 10px;
-  background-color: rgba(143, 154, 255, 0.68));
+  background-color: rgba(143, 154, 255, 0.2);
 }
-#litcenter
+
+#lit_center
 {
   margin: auto;
   position: relative;
   width: 840px;
   overflow: auto;
   overflow-y: hidden;
+}
+
+#lit_body
+{
+  background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#beat_pad
+{
+  background-position:center;
+  height: 580px;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  background-color: rgba(143, 154, 255, 0.68));
+}
+
+#beat_pad.pad1
+{
+  color: red;
+}
+
+#beat_pad.pad2
+{
+  color: blue;
+}
+
+#beat_pad.pad3
+{
+  color: yellow;
+}
+
+#beat_pad.pad4
+{
+  color: green;
+  display: inline
+}
