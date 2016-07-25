@@ -14,10 +14,12 @@ background-attachment: fixed;}
 
 #home_page_gifs
 {
-   height: 580px;
-   width: 1050px;
-   margin-left: 250px;
-   margin-right: 250px;
+  background-image:url(http://www.vectordiary.com/wp-content/uploads/2013/12/magic-waves.jpg);
+  background-position:center;
+  height: 580px;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home_gifs
@@ -32,11 +34,7 @@ background-attachment: fixed;}
 
 #to_the_back
 {
-  position: absolute;
-  right: 100px;
-  left: 240px;
-  top: 0px;
-  z-index: -1;
+  margin: 0 auto;
 }
 
 #lit_left
@@ -98,6 +96,7 @@ background-attachment: fixed;}
 }
 
 #lit_center
+
 {
   margin: auto;
   position: relative;
@@ -106,6 +105,7 @@ background-attachment: fixed;}
   overflow-y: hidden;
 }
 
+<<<<<<< HEAD
 #lit_body
 {
   background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-2.jpg);
@@ -114,4 +114,9 @@ background-attachment: fixed;}
   background-position: center;
   background-attachment: fixed;
 
+=======
+#sp
+{
+  display: inline
+>>>>>>> 59b4d06d7263cf27c8dbfb146acaa194916866f8
 }
