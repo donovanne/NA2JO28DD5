@@ -67,7 +67,7 @@ class TrumpHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('trump.html')
         html = template.render()
-        self.response.write()
+        self.response.write(html)
 
 class FeedbackHandler(webapp2.RequestHandler):
     def get(self):
