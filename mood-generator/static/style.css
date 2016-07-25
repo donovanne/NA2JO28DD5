@@ -53,11 +53,27 @@ background-attachment: fixed;
   margin-top: 10px;
   margin-left: 20px;
   padding: 10px 10px 10px 10px;
-  border: 3px dotted rgba(74, 145, 227, 0.5);
+  border: 6px double rgba(74, 145, 227, 0.5);
+  border-radius: 20px;
   line-height: 10px;
   letter-spacing: 0px;
   margin-bottom: 20px;
-  background-color: rgba(143, 154, 255, 0.68));
+  background-color: rgba(143, 154, 255, 0.2);
+}
+
+#lit_middle
+{
+
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+
+  width: auto;
+  padding: 10px;
+  margin-top: 0px;
+
+  display: block;
 }
 
 #lit_right
@@ -73,15 +89,15 @@ background-attachment: fixed;
   margin-top: 10px;
   margin-left: 635px;
   padding: 10px 10px 10px 10px;
-  border: 3px dotted rgba(74, 145, 227, 0.5);
+  border: 6px double rgba(74, 145, 227, 0.5);
+  border-radius: 20px;
   line-height: 10px;
   letter-spacing: 0px;
   margin-bottom: 10px;
-  background-color: rgba(143, 154, 255, 0.68));
+  background-color: rgba(143, 154, 255, 0.2);
 }
 
 #lit_center
-
 {
   margin: auto;
   position: relative;
@@ -90,7 +106,16 @@ background-attachment: fixed;
   overflow-y: hidden;
 }
 
-#sp
+#lit_body
+{
+  background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#beat_pad
 {
   background-position:center;
   height: 580px;
@@ -101,22 +126,23 @@ background-attachment: fixed;
   background-color: rgba(143, 154, 255, 0.68));
 }
 
-#sp.pad1
+#beat_pad.pad1
 {
   color: red;
 }
 
-#sp.pad2
+#beat_pad.pad2
 {
   color: blue;
 }
 
-#sp.pad3
+#beat_pad.pad3
 {
   color: yellow;
 }
 
-#sp.pad4
+#beat_pad.pad4
 {
   color: green;
+  display: inline
 }
