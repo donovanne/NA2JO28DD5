@@ -36,30 +36,40 @@ class FeedbackComment(ndb.Model):
 #homepage
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write(jinja_environment.get_template('index.html').render())
-        # seperate HTML files
+        template = jinja_environment.get_template('index.html')
+        html = template.render()
+        self.response.write(html)
         # using letters to trigger the squares on our Trump pad?
 
 class SadHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write(jinja_environment.get_template('lit.html').render({"mood": "Sad"})
+        template = jinja_environment.get_template('mood.html')
+        html = template.render({"mood": "Sad"})
+        self.response.write(html)
 
 class HappyHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write(jinja_environment.get_template('lit.html').render({"mood": "Happy"})
+        template = jinja_environment.get_template('mood.html')
+        html = template.render({"mood": "Happy"})
+        self.response.write(html)
 
 class LitHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write(jinja_environment.get_template('lit.html').render({"mood": "Lit"})
-
+        template = jinja_environment.get_template('mood.html')
+        html = template.render({"mood": "Lit"})
+        self.response.write(html)
 
 class TrumpHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write(jinja_environment.get_template('trump.html').render()
+        template = jinja_environment.get_template('trump.html')
+        html = template.render()
+        self.response.write(html)
 
 class FeedbackHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write(jinja_environment.get_template('feedback.html').render()
+        template = jinja_environment.get_template('feedback.html')
+        html = template.render()
+        self.response.write(html)
 
 class PostFeedbackHandler(webapp2.RequestHandler):
     def get(self):
