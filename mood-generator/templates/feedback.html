@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="style">
+  <link rel="stylesheet" type="style.css"
+          href="https://fonts.googleapis.com/css?family=Fjalla+One">
   <title>Thank you for using Mood Generator!</title>
   <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-  <h1>Thank you for using Mood Generator! Your feedback is highly valued and appreciated.</h1>
-  <form method="get" action="/thankyou">
-    <p>Name (optional): <input type="text" name="name"/></p>
-    <p>Rating:
-    <input type="radio" name="rating" value="1">1
-    <input type="radio" name="rating" value="2">2
-    <input type="radio" name="rating" value="3">3
-    <input type="radio" name="rating" value="4">4
-    <input type="radio" name="rating" value="5">5
-    <p>Comment: <input type="text" name="comment"/></p>
-    <p><input type="submit"></p>
-  </form>
+  <center><div>
+    <h1>Thank you for using Mood Generator! Your feedback is highly valued and appreciated.</h1>
+    <form method="get" action="/thankyou">
+      <p>Name (optional): <input type="text" name="name"/></p>
+      <p>Rating:
+      <input type="radio" name="rating" value="1">1
+      <input type="radio" name="rating" value="2">2
+      <input type="radio" name="rating" value="3">3
+      <input type="radio" name="rating" value="4">4
+      <input type="radio" name="rating" value="5">5
+      <p>Comment: <input type="text" name="comment"/></p>
+      <p><input type="submit"></p>
+    </form>
+  </div></center>
 </body>
 </html>
