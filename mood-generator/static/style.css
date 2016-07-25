@@ -37,7 +37,7 @@ background-attachment: fixed;}
   margin: 0 auto;
 }
 
-#litleft
+#lit_left
 {
 
   font-family: 'Fjalla One', sans-serif;
@@ -58,7 +58,7 @@ background-attachment: fixed;}
   background-color: rgba(143, 154, 255, 0.68));
 }
 
-#litright
+#lit_right
 {
   font-family: 'Fjalla One', sans-serif;
   color: black;
@@ -78,7 +78,8 @@ background-attachment: fixed;}
   background-color: rgba(143, 154, 255, 0.68));
 }
 
-#litcenter
+#lit_center
+
 {
   margin: auto;
   position: relative;
