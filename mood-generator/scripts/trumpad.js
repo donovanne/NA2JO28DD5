@@ -36,5 +36,13 @@ function createsoundbite(sound){
 
 //Initialize two sound clips with 1 fallback file each:
 
-var mouseoversound=createsoundbite("whistle.ogg", "whistle.mp3")
-var clicksound=createsoundbite("click.ogg", "click.mp3")
+//var mouseoversound=createsoundbite("whistle.ogg", "whistle.mp3")
+var pad1=createsoundbite("Clap01.wav")
+var pad2=createsoundbite("Hat01.wav")
+var pad3=createsoundbite("Kick01.wav")
+var pad4=createsoundbite("OpenHat01.wav")
+var pad5=createsoundbite("Perc01.wav")
+var pad6=createsoundbite("Rev01.wav")
+var pad7=createsoundbite("Snare01.wav")
+var pad8=createsoundbite("Tom01.wav")
+var pad9=createsoundbite("Tom03.wav")
