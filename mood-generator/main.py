@@ -75,6 +75,12 @@ class FeedbackHandler(webapp2.RequestHandler):
         html = template.render()
         self.response.write(html)
 
+class PostFeedbackHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('post_feedback.html')
+        html = template.render()
+        self.response.write(html)
+
 def get_feedback(name, comment): # this isn't working yet
     the_time = datetime.datetime.fromtimestamp(time.time())
     # putting feedback into datastore
@@ -87,5 +93,6 @@ app = webapp2.WSGIApplication([
     ('/happy', HappyHandler),
     ('/lit', LitHandler),
     ('/trump', TrumpHandler),
-    ('/feedback', FeedbackHandler)
+    ('/feedback', FeedbackHandler),
+    ('/thankyou', PostFeedbackHandler)
 ], debug=True)
