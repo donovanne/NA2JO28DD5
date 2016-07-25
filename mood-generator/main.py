@@ -36,45 +36,29 @@ class FeedbackComment(ndb.Model):
 #homepage
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        # the line below does the same as the following 3 commented lines
-        # I was unsure whether to favor less code or better readability, so yeah
-        # I'll leave the corresponding code in the other handlers as they were for now - Donovanne
         self.response.write(jinja_environment.get_template('index.html').render())
-        # template = jinja_environment.get_template('index.html')
-        # html = template.render()
-        # self.response.write(html)
-        #seperate HTML files
-        #using letters to trigger the squares on our Trump pad?
+        # seperate HTML files
+        # using letters to trigger the squares on our Trump pad?
 
 class SadHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('mood-pages.html')
-        html = template.render({"mood": "Sad"})
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('mood-pages.html').render({"mood": "Sad"})
 
 class HappyHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('mood-pages.html')
-        html = template.render({"mood": "Happy"})
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('mood-pages.html').render({"mood": "Happy"})
 
 class LitHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('mood-pages.html')
-        html = template.render({"mood": "Lit"})
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('mood-pages.html').render({"mood": "Lit"})
 
 class TrumpHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('trump.html')
-        html = template.render()
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('trump.html').render()
 
 class FeedbackHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('feedback.html')
-        html = template.render()
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('feedback.html').render()
 
 class PostFeedbackHandler(webapp2.RequestHandler):
     def get(self):
