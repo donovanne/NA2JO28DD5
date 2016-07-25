@@ -13,6 +13,10 @@ handlers:
   static_files: static/style.css
   upload: static/style\.css
 
+- url: /trumpad\.js
+  static_files: scripts/trumpad.js
+  upload: scripts/trumpad\.js
+
 - url: .*
   script: main.app
 

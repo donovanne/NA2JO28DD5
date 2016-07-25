@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="style">
+  <link rel="stylesheet" type="style.css"
+          href="https://fonts.googleapis.com/css?family=Fjalla+One">
   <title>Trump Generator</title>
-  <link rel="stylesheet" href="static/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"> </script>
-  <script src='./scripts/trumpad.js'></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script src='trumpad.js'></script>
 </head>
 <body>
   <h1 class='header'>TrumPad</h1>
 
-  <section id="beat_pad">
-    <div id="pad1" data-sound="kick.wav"></div>
-    <div id="pad2" data-sound="snare.wav"></div>
-    <div id="pad3" data-sound="tin.wav"></div>
-    <div id="pad4" data-sound="hat.wav"></div>
+  <section>
+    <div class="beat_pad">
+      <div class="pad" id='p1'>Pad 1</div>
+      <div class="pad" id='p2'>Pad 2</div>
+    </div>
+    <div class="beat_pad">
+      <div class="pad" id='p3'>Pad 3</div>
+      <div class="pad" id='p4'>Pad 4</div>
+    </div>
   </section>
 </body>
 </html>

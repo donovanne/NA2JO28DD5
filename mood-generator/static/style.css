@@ -131,5 +131,55 @@ background-attachment: fixed;}
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
 
+.beat_pad
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  height: 210px;
+  width: 415px;
+
+}
+
+.pad
+{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  display: inline-block;;
+  text-align: center;
+  border: 2px solid black;
+}
+
+#p1
+{
+  background: blue;
+}
+
+#p2
+{
+  background: red;
+}
+
+#p3
+{
+  background: yellow;
+}
+
+#p4
+{
+  background: green;
+}
+
+section
+{
+  width: 450px;
+  height: 450px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
