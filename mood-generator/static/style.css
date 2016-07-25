@@ -1,16 +1,10 @@
 .header
 {
-<<<<<<< HEAD
-  font-family: Fjalla One;
-  color: white;
-=======
   font-family: 'Fjalla One', sans-serif;
-  color: black;
->>>>>>> 8c4cdebfade19d457e10a8c464b92a614ce6bad1
+  color: white;
   font-size: 60px;
   text-align: center;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
 }
 
 #body_index {
@@ -64,7 +58,6 @@ background-attachment: fixed;}
   letter-spacing: 0px;
   margin-bottom: 20px;
   background-color: rgba(143, 154, 255, 0.68));
-
 }
 
 #litright
@@ -85,8 +78,6 @@ background-attachment: fixed;}
   letter-spacing: 0px;
   margin-bottom: 10px;
   background-color: rgba(143, 154, 255, 0.68));
-
-
 }
 #litcenter
 {
