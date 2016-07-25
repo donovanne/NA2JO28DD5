@@ -126,34 +126,53 @@ background-attachment: fixed;
   background-attachment: fixed;
 }
 
-#beat_pad
+.beat_pad
 {
-  background-position:center;
-  height: 580px;
-  width: 1050px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
-  display: inline;
-  background-color: rgba(143, 154, 255, 0.68));
+  height: 210px;
+  width: 415px;
+
 }
 
-#beat_pad.pad1
+.pad
 {
-  color: red;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  display: inline-block;;
+  text-align: center;
+  border: 2px solid black;
 }
 
-#beat_pad.pad2
+#p1
 {
-  color: blue;
+  background: blue;
 }
 
-#beat_pad.pad3
+#p2
 {
-  color: yellow;
+  background: red;
 }
 
-#beat_pad.pad4
+#p3
 {
-  color: green;
-  display: inline
+  background: yellow;
+}
+
+#p4
+{
+  background: green;
+}
+
+section
+{
+  width: 450px;
+  height: 450px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
