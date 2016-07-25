@@ -6,20 +6,59 @@
   <title>Trump Generator</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-  <script src='trumpad.js'></script>
+  <script src="trumpad.js"></script>
 </head>
 <body>
-  <h1 class='header'>TrumPad</h1>
+  <h1 class="header">TrumPad</h1>
 
-  <section>
-    <div class="beat_pad">
-      <div class="pad" id='p1'>Pad 1</div>
-      <div class="pad" id='p2'>Pad 2</div>
+  <div class="beat_pad">
+    <div class="pad" id='p1' onclick="clicksound.playclip()">
+      <p class="text">Pad 1</p>
     </div>
-    <div class="beat_pad">
-      <div class="pad" id='p3'>Pad 3</div>
-      <div class="pad" id='p4'>Pad 4</div>
+    <div class="pad" id='p2' onclick="clicksound.playclip()">
+      <p class="text">Pad 2</p>
     </div>
-  </section>
+    <div class="pad" id='p3' onclick="clicksound.playclip()">
+      <p class="text">Pad 3</p>
+    </div>
+    <div class="pad" id='p4' onclick="clicksound.playclip()">
+      <p class="text">Pad 4</p>
+    </div>
+    <div class="pad" id='p5' onclick="clicksound.playclip()">
+      <p class="text">Pad 5</p>
+    </div>
+    <div class="pad" id='p6' onclick="clicksound.playclip()">
+      <p class="text">Pad 6</p>
+    </div>
+    <div class="pad" id='p7' onclick="clicksound.playclip()">
+      <p class="text">Pad 7</p>
+    </div>
+    <div class="pad" id='p8' onclick="clicksound.playclip()">
+      <p class="text">Pad 8</p>
+    </div>
+    <div class="pad" id='p9' onclick="clicksound.playclip()">
+      <p class="text">Pad 9</p>
+    </div>
+  </div>
+
+  <p align="left"><b>Moveover</b> your mouse over any of the links below to hear a sound effect:</p>
+
+  <p align="left">
+  <a href="http://www.javascriptkit.com" onmouseover="mouseoversound.playclip()">JavaScript Kit</a></p>
+
+  <p align="left">
+  <a href="http://www.dynamicdrive.com" onmouseover="mouseoversound.playclip()">Dynamic Drive</a></p>
+
+  <p align="left">
+  <a href="http://www.cssdrive.com" onmouseover="mouseoversound.playclip()">CSS Drive</a></p>
+
+  <p align="left">
+  <a href="http://www.codingforums.com" onmouseover="mouseoversound.playclip()">Coding Forums</a></p>
+
+  <p align="left"><b>Click</b> on the following links to hear a sound effect:</p>
+  <p align="left">
+  <a href="#current" onclick="clicksound.playclip()">Link 1</a>
+  <a href="#current" onclick="clicksound.playclip()">Link 2</a>
+  <a href="#current" onclick="clicksound.playclip()">Link 3</a></p>
 </body>
 </html>
