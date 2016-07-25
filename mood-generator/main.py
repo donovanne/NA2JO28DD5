@@ -42,6 +42,8 @@ class MainHandler(webapp2.RequestHandler):
         # template = jinja_environment.get_template('index.html')
         # html = template.render()
         # self.response.write(html)
+        #seperate HTML files
+        #using letters to trigger the squares on our Trump pad?
 
 class SadHandler(webapp2.RequestHandler):
     def get(self):
