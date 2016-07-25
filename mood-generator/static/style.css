@@ -1,7 +1,41 @@
 .header
 {
   font-family: Fjalla One;
-  color: black;
+  color: white;
   font-size: 60px;
   text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+}
+
+#body_index {
+background-image: url(http://webdesigntunes.com/wp-content/uploads/2013/06/white-wood.jpg);
+background-size: cover;
+background-attachment: fixed;}
+
+#home_page_gifs
+{
+   height: 580px;
+   width: 1050px;
+   margin-left: 250px;
+   margin-right: 250px;
+}
+
+.home_gifs
+{
+  height: 200px;
+  padding: 40px;
+  border: 10px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-style: solid;
+  margin: 10px;
+}
+
+#to_the_back
+{
+  position: absolute;
+  right: 100px;
+  left: 240px;
+  top: 0px;
+  z-index: -1;
 }
