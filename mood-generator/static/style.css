@@ -7,21 +7,17 @@
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-#body_index
-{
+#body_index {
 background-image: url(http://webdesigntunes.com/wp-content/uploads/2013/06/white-wood.jpg);
 background-size: cover;
-background-attachment: fixed;
-}
+background-attachment: fixed;}
 
 #home_page_gifs
 {
-  background-image:url(http://www.vectordiary.com/wp-content/uploads/2013/12/magic-waves.jpg);
-  background-position:center;
-  height: 580px;
-  width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
+   height: 580px;
+   width: 1050px;
+   margin-left: 250px;
+   margin-right: 250px;
 }
 
 .home_gifs
@@ -36,7 +32,11 @@ background-attachment: fixed;
 
 #to_the_back
 {
-  margin: 0 auto;
+  position: absolute;
+  right: 100px;
+  left: 240px;
+  top: 0px;
+  z-index: -1;
 }
 
 #lit_left
@@ -51,7 +51,7 @@ background-attachment: fixed;
   width: 200px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(74, 145, 227, 0.5);
   border-radius: 20px;
@@ -61,6 +61,17 @@ background-attachment: fixed;
   background-color: rgba(143, 154, 255, 0.2);
 }
 
+.lit_images
+{
+  width: 370px;
+  height: 230px;
+  overflow: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+
 #lit_middle
 {
 
@@ -69,9 +80,16 @@ background-attachment: fixed;
   font-size: 30px;
   text-align: center;
 
-  width: auto;
-  padding: 10px;
-  margin-top: 0px;
+  border: 4px dotted rgba(74, 145, 227, 0.5);
+  float: left;
+  max-width: 50%;
+  height: 80%;
+  width: 410px;
+  padding: 0px;
+  margin-left: 257px;
+  margin-top: 12px;
+  overflow: auto;
+  background-color: rgba(143, 154, 255, 0.1);
 
   display: block;
 }
@@ -87,7 +105,7 @@ background-attachment: fixed;
   width: 200px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 635px;
+  margin-left: 690px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(74, 145, 227, 0.5);
   border-radius: 20px;
@@ -113,36 +131,5 @@ background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-}
 
-#beat_pad
-{
-  background-position:center;
-  height: 580px;
-  width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline;
-  background-color: rgba(143, 154, 255, 0.68));
-}
-
-#beat_pad.pad1
-{
-  color: red;
-}
-
-#beat_pad.pad2
-{
-  color: blue;
-}
-
-#beat_pad.pad3
-{
-  color: yellow;
-}
-
-#beat_pad.pad4
-{
-  color: green;
-  display: inline
 }
