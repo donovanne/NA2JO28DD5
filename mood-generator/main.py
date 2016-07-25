@@ -59,7 +59,7 @@ class HappyHandler(webapp2.RequestHandler):
 
 class LitHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('mood-pages.html')
+        template = jinja_environment.get_template('lit.html')
         html = template.render({"mood": "Lit"})
         self.response.write(html)
 
