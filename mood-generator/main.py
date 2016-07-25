@@ -85,6 +85,9 @@ class PostFeedbackHandler(webapp2.RequestHandler):
 def get_feedback(name, comment, rating): # this isn't working yet
     the_time = datetime.datetime.fromtimestamp(time.time())
     # putting feedback into datastore
+    if name == "":
+        name = "Anonymous"
+
     feedback = FeedbackComment(name=name, comment=comment, the_time=the_time, rating=int(rating))
     feedback.put()
 
