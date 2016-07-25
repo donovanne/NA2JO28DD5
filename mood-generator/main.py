@@ -30,56 +30,55 @@ jinja_environment = jinja2.Environment(
 class FeedbackComment(ndb.Model):
     name = ndb.StringProperty(required=False)
     comment = ndb.StringProperty(required=True)
-    theTime = ndb.DateProperty(required=True)
+    the_time = ndb.DateProperty(required=True)
+    rating = ndb.IntegerProperty(required=True)
 
 #homepage
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        # the line below does the same as the following 3 commented lines
-        # I was unsure whether to favor less code or better readability, so yeah
-        # I'll leave the corresponding code in the other handlers as they were for now - Donovanne
         self.response.write(jinja_environment.get_template('index.html').render())
-        # template = jinja_environment.get_template('index.html')
-        # html = template.render()
-        # self.response.write(html)
-        #seperate HTML files
-        #using letters to trigger the squares on our Trump pad?
+        # seperate HTML files
+        # using letters to trigger the squares on our Trump pad?
 
 class SadHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('mood-pages.html')
-        html = template.render({"mood": "Sad"})
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('mood-pages.html').render({"mood": "Sad"})
 
 class HappyHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('mood-pages.html')
-        html = template.render({"mood": "Happy"})
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('mood-pages.html').render({"mood": "Happy"})
 
 class LitHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('mood-pages.html')
-        html = template.render({"mood": "Lit"})
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('lit.html').render({"mood": "Lit"})
+
 
 class TrumpHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('trump.html')
-        html = template.render()
-        self.response.write()
+        self.response.write(jinja_environment.get_template('trump.html').render()
 
 class FeedbackHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('feedback.html')
-        html = template.render()
-        self.response.write(html)
+        self.response.write(jinja_environment.get_template('feedback.html').render()
 
-def get_feedback(name, comment): # this isn't working yet
-    theTime = datetime.datetime.fromtimestamp(time.time())
+class PostFeedbackHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.write(get_feedback(self.request.get('name'), self.request.get('comment'), self.request.get('rating')))
+    def post(self):
+        self.response.write(get_feedback(self.request.get('name'), self.request.get('the_time'), self.request.get('rating')))
+
+def get_feedback(name, comment, rating): # this isn't working yet
+    the_time = datetime.datetime.fromtimestamp(time.time())
     # putting feedback into datastore
-    feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
-    feed.put()
+    if name == "":
+        name = "Anonymous"
+
+    feedback = FeedbackComment(name=name, comment=comment, the_time=the_time, rating=int(rating))
+    feedback.put()
+
+    template = jinja_environment.get_template('post_feedback.html')
+    html = template.render()
+    return html
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
@@ -87,5 +86,6 @@ app = webapp2.WSGIApplication([
     ('/happy', HappyHandler),
     ('/lit', LitHandler),
     ('/trump', TrumpHandler),
-    ('/feedback', FeedbackHandler)
+    ('/feedback', FeedbackHandler),
+    ('/thankyou', PostFeedbackHandler)
 ], debug=True)

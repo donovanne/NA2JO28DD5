@@ -1,7 +1,12 @@
 .header
 {
+<<<<<<< HEAD
   font-family: Fjalla One;
   color: white;
+=======
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+>>>>>>> 8c4cdebfade19d457e10a8c464b92a614ce6bad1
   font-size: 60px;
   text-align: center;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -39,3 +44,54 @@ background-attachment: fixed;}
   top: 0px;
   z-index: -1;
 }
+
+#litleft
+{
+
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+
+  position: fixed !important;
+  width: 200px;
+  height: 90%;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 10px 10px 10px 10px;
+  border: 3px dotted rgba(74, 145, 227, 0.5);
+  line-height: 10px;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+  background-color: rgba(143, 154, 255, 0.68));
+
+}
+
+#litright
+{
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+
+  position: fixed !important;
+  width: 200px;
+  height: 90%;
+  margin-top: 10px;
+  margin-left: 635px;
+  padding: 10px 10px 10px 10px;
+  border: 3px dotted rgba(74, 145, 227, 0.5);
+  line-height: 10px;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  background-color: rgba(143, 154, 255, 0.68));
+
+
+}
+#litcenter
+{
+  margin: auto;
+  position: relative;
+  width: 840px;
+  overflow: auto;
+  overflow-y: hidden;
