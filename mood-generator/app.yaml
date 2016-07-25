@@ -17,6 +17,22 @@ handlers:
   static_files: scripts/trumpad.js
   upload: scripts/trumpad\.js
 
+- url: /whistle\.ogg
+  static_files: drum_kit/whistle.ogg
+  upload: drum_kit/whistle\.ogg
+
+- url: /whistle\.mp3
+  static_files: drum_kit/whistle.mp3
+  upload: drum_kit/whistle\.mp3
+
+- url: /click\.ogg
+  static_files: drum_kit/click.ogg
+  upload: drum_kit/click\.ogg
+
+- url: /click\.mp3
+  static_files: drum_kit/click.mp3
+  upload: drum_kit/click\.mp3
+
 - url: .*
   script: main.app
 
