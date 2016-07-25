@@ -30,7 +30,7 @@ jinja_environment = jinja2.Environment(
 class FeedbackComment(ndb.Model):
     name = ndb.StringProperty(required=False)
     comment = ndb.StringProperty(required=True)
-    theTime = ndb.DateProperty(required=True)
+    the_time = ndb.DateProperty(required=True)
 
 #homepage
 class MainHandler(webapp2.RequestHandler):
@@ -42,6 +42,8 @@ class MainHandler(webapp2.RequestHandler):
         # template = jinja_environment.get_template('index.html')
         # html = template.render()
         # self.response.write(html)
+        #seperate HTML files
+        #using letters to trigger the squares on our Trump pad?
 
 class SadHandler(webapp2.RequestHandler):
     def get(self):
@@ -74,7 +76,7 @@ class FeedbackHandler(webapp2.RequestHandler):
         self.response.write(html)
 
 def get_feedback(name, comment): # this isn't working yet
-    theTime = datetime.datetime.fromtimestamp(time.time())
+    the_time = datetime.datetime.fromtimestamp(time.time())
     # putting feedback into datastore
     feedback = FeedbackComment(name=name, comment=comment, theTime=theTime)
     feed.put()
