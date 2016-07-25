@@ -31,6 +31,7 @@ class FeedbackComment(ndb.Model):
     name = ndb.StringProperty(required=False)
     comment = ndb.StringProperty(required=True)
     the_time = ndb.DateProperty(required=True)
+    rating = ndb.IntegerProperty(required=True)
 
 #homepage
 class MainHandler(webapp2.RequestHandler):
@@ -77,19 +78,19 @@ class FeedbackHandler(webapp2.RequestHandler):
 
 class PostFeedbackHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write(get_feedback(""))
+        self.response.write(get_feedback(self.request.get('name'), self.request.get('comment'), self.request.get('rating')))
     def post(self):
-        self.response.write(get_feedback(self.request.get('name'), self.request.get('the_time')))
+        self.response.write(get_feedback(self.request.get('name'), self.request.get('the_time'), self.request.get('rating')))
 
-def get_feedback(name, comment): # this isn't working yet
+def get_feedback(name, comment, rating): # this isn't working yet
     the_time = datetime.datetime.fromtimestamp(time.time())
     # putting feedback into datastore
-    feedback = FeedbackComment(name=name, comment=comment, the_time=the_time)
-    feed.put()
+    feedback = FeedbackComment(name=name, comment=comment, the_time=the_time, rating=int(rating))
+    feedback.put()
 
     template = jinja_environment.get_template('post_feedback.html')
     html = template.render()
-    self.response.write(html)
+    return html
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
