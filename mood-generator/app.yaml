@@ -17,21 +17,29 @@ handlers:
   static_files: scripts/trumpad.js
   upload: scripts/trumpad\.js
 
-- url: /Clap01\.wav
-  static_files: drum_kit/Clap01.wav
-  upload: drum_kit/Clap01\.wav
+- url: /bingbing\.wav
+  static_files: drum_kit/bingbing.wav
+  upload: drum_kit/bingbing\.wav
 
-- url: /Hat01\.wav
-  static_files: drum_kit/Hat01.wav
-  upload: drum_kit/Hat01\.wav
+- url: /bongbong\.wav
+  static_files: drum_kit/bongbong.wav
+  upload: drum_kit/bongbong\.wav
 
-- url: /Kick01\.wav
-  static_files: drum_kit/Kick01.wav
-  upload: drum_kit/Kick01\.wav
+- url: /bum\.wav
+  static_files: drum_kit/bum.wav
+  upload: drum_kit/bum\.wav
 
-- url: /OpenHat01\.wav
-  static_files: drum_kit/OpenHat01.wav
-  upload: drum_kit/OpenHat01\.wav
+- url: /clink\.wav
+  static_files: drum_kit/clink.wav
+  upload: drum_kit/clink\.wav
+
+- url: /bababababa\.wav
+  static_files: drum_kit/bababababa.wav
+  upload: drum_kit/bababababa\.wav
+
+- url: /bingbing2\.wav
+  static_files: drum_kit/bingbing2.wav
+  upload: drum_kit/bingbing2\.wav
 
 - url: .*
   script: main.app
