@@ -5,41 +5,18 @@ api_version: 1
 threadsafe: no
 
 handlers:
+- url: /static
+  static_dir: static
+
+- url: /scripts
+  static_dir: scripts
+
+- url: /drum_kit
+  static_dir: drum_kit
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
-
-- url: /style\.css
-  static_files: static/style.css
-  upload: static/style\.css
-
-- url: /trumpad\.js
-  static_files: scripts/trumpad.js
-  upload: scripts/trumpad\.js
-
-- url: /bingbing\.wav
-  static_files: drum_kit/bingbing.wav
-  upload: drum_kit/bingbing\.wav
-
-- url: /bongbong\.wav
-  static_files: drum_kit/bongbong.wav
-  upload: drum_kit/bongbong\.wav
-
-- url: /bum\.wav
-  static_files: drum_kit/bum.wav
-  upload: drum_kit/bum\.wav
-
-- url: /clink\.wav
-  static_files: drum_kit/clink.wav
-  upload: drum_kit/clink\.wav
-
-- url: /bababababa\.wav
-  static_files: drum_kit/bababababa.wav
-  upload: drum_kit/bababababa\.wav
-
-- url: /bingbing2\.wav
-  static_files: drum_kit/bingbing2.wav
-  upload: drum_kit/bingbing2\.wav
 
 - url: .*
   script: main.app

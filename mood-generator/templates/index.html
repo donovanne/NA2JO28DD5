@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<!--still picture of the gif and when you hover over it, make it move -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> <!-- for implementing jquery stuff-->
+<script src="/scripts/index.js"></script>
+<!-- jsfiddle -->
 <html>
+
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fjalla+One">
   <title>Mood Generator</title>
 </head>
+
+
 <body id="body_index">
-  <p class="header">MOOD GENERATOR<p>
-<img id="to_the_back" height=1000px width=1000px src="http://www.vectordiary.com/wp-content/uploads/2013/12/magic-waves.jpg">
-<div id="home_page_gifs">
-  <a href="http://localhost:13080/happy">
-  <img class="home_gifs" src="https://66.media.tumblr.com/e1c85a2056f00bf0b9ce5b9dccbebc61/tumblr_n3f4sxwM8E1smqfiko1_500.gif">
-  </a>
-  <a href="http://localhost:13080/trump">
-  <img class="home_gifs" src="https://media.giphy.com/media/TdXZkVaakMZmU/giphy.gif">
-  </a>
-  <a href="http://localhost:13080/sad">
-  <img class="home_gifs" src="https://secure.static.tumblr.com/f31d3089d5641d6a8d09c9dcc00c8aee/ayc9plg/hSAo8a0tq/tumblr_static__640_v2.gif">
-  </a>
-  <a href="http://localhost:13080/lit">
-  <img class="home_gifs" src="http://25.media.tumblr.com/f254105ae6672e6252d171badfe14299/tumblr_mhiz6jgJ7N1rag9fdo1_500.gif">
-  </a>
-</div>
+    <p class="header">MOOD GENERATOR</p>
+
+    <img id="to_the_back" height=1000px width=1000px src="http://www.vectordiary.com/wp-content/uploads/2013/12/magic-waves.jpg">
+
+        <div id="home_page_gifs">
+          <a href="http://localhost:13080/happy">
+            <img class="home_gifs" src="https://66.media.tumblr.com/e1c85a2056f00bf0b9ce5b9dccbebc61/tumblr_n3f4sxwM8E1smqfiko1_500.gif">
+          </a>
+          <a href="http://localhost:13080/trump">
+            <img class="home_gifs" src="https://media.giphy.com/media/TdXZkVaakMZmU/giphy.gif">
+          </a>
+          <a href="http://localhost:13080/sad">
+            <img class="home_gifs" src="https://secure.static.tumblr.com/f31d3089d5641d6a8d09c9dcc00c8aee/ayc9plg/hSAo8a0tq/tumblr_static__640_v2.gif">
+          </a>
+          <a href="http://localhost:13080/lit">
+            <img class="home_gifs" src="http://25.media.tumblr.com/f254105ae6672e6252d171badfe14299/tumblr_mhiz6jgJ7N1rag9fdo1_500.gif">
+          </a>
+        </div>
+
+
+        <div id="scroller" style="width: 550px; height: 400px; margin: 0 auto;">
+            <div class="innerScrollArea">
+                <ul>
+                    <!-- Define photos here -->
+                    <li><img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Heart_Eyes_Emoji_grande.png?v=1458743766
+      " width="200" height="200" /></li>
+                    <li><img src="https://workshops.nodebox.net/2016-antwerp/day2/nano/emoji7.png
+      " width="200" height="200" /></li>
+                    <li><img src="http://www.damonbraces.com/img/bethany-hamilton/emoji/DamonBraces_S016.png
+      " width="200" height="200" /></li>
+                    <li><img src="http://i.kinja-img.com/gawker-media/image/upload/olwvzojltvhenqyml7ka.png
+      " width="200" height="200" /></li>
+                    <li><img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Sad_Face_Emoji.png?9898922749706957214
+      " width="200" height="200" /></li>
+                    <li><img src="http://worldemojiday.com/wp-content/uploads/2015/08/globe-moji.png
+      " width="200" height="200" /></li>
+                </ul>
+            </div>
+        </div>
 </body>
+
+
 </html>
