@@ -5,8 +5,14 @@
   font-size: 60px;
   text-align: center;
   text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+
 }
 
+#four_anchors{
+  margin-left: -50px;
+    margin-right: auto;
+    display: block;
+}
 #scroller {
     position: relative;
 }
@@ -17,7 +23,6 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: 2000px;
 }
 #scroller ul {
     padding: 0;
@@ -56,6 +61,7 @@ background-attachment: fixed;
    width: 1050px;
    margin-left: auto;
    margin-right: auto;
+   position: static;
 }
 
 .home_gifs
@@ -71,9 +77,12 @@ background-attachment: fixed;
 #to_the_back
 {
   position: absolute;
-  right: 100px;
+  /*right: 100px;
   left: 240px;
-  top: 0px;
+  top: 0px;*/
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   z-index: -1;
 }
 
@@ -159,7 +168,7 @@ background-attachment: fixed;
 {
   font-family: "Fjalla One";
   font-size:17px;
-  height: 40%;
+  height: 63%;
   width: 88%;
   overflow: auto;
   border: 2px outset rgba(255, 255, 255, 0.3);
