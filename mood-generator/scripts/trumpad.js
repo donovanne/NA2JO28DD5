@@ -59,12 +59,10 @@ window.onclick = function(event) {
 //Initialize two sound clips with 1 fallback file each:
 
 //var mouseoversound=createsoundbite("whistle.ogg", "whistle.mp3")
-var pad1=createsoundbite("bingbing.wav")
-var pad2=createsoundbite("bingbing2.wav")
-var pad3=createsoundbite("bum.wav")
-var pad4=createsoundbite("bongbong.wav")
-var pad5=createsoundbite("clink.wav")
-var pad6=createsoundbite("bababababa.wav")
-var pad7=createsoundbite("Snare01.wav")
-var pad8=createsoundbite("Tom01.wav")
-var pad9=createsoundbite("Tom03.wav")
+
+var pad1=createsoundbite("/drum_kit/bingbing.wav")
+var pad2=createsoundbite("/drum_kit/bingbing2.wav")
+var pad3=createsoundbite("/drum_kit/bum.wav")
+var pad4=createsoundbite("/drum_kit/bongbong.wav")
+var pad5=createsoundbite("/drum_kit/clink.wav")
+var pad6=createsoundbite("/drum_kit/bababababa.wav")
