@@ -11,7 +11,8 @@ var html5_audiotypes={ //define list of audio file extensions and their associat
   "wav": "audio/wav"
 }
 
-function createsoundbite(sound){
+function createsoundbite(sound)
+{
   var html5audio=document.createElement('audio')
   if (html5audio.canPlayType){ //check support for HTML5 audio
     for (var i=0; i<arguments.length; i++){
@@ -31,6 +32,27 @@ function createsoundbite(sound){
   }
   else{
     return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+  }
+}
+
+/* this function opens the loop selection list in a drop down menu */
+function loop_list()
+{
+  document.getElementById("dropdown_menu").classList.toggle("show");
+}
+
+/* when the user clicks outside the list, this function closes the list */
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown_content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
 }
 
