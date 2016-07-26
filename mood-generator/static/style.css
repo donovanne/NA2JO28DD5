@@ -81,8 +81,8 @@ background-attachment: fixed;
 {
 
   font-family: 'Fjalla One', sans-serif;
-  color: black;
-  font-size: 30px;
+  color: white;
+  font-size: 40px;
   text-align: center;
 
   position: fixed !important;
@@ -91,12 +91,12 @@ background-attachment: fixed;
   margin-top: 10px;
   margin-left: 10px;
   padding: 10px 10px 10px 10px;
-  border: 6px double rgba(74, 145, 227, 0.5);
+  border: 6px double rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  line-height: 10px;
+  line-height: 38px;
   letter-spacing: 0px;
   margin-bottom: 20px;
-  background-color: rgba(143, 154, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .lit_images
@@ -106,7 +106,8 @@ background-attachment: fixed;
   overflow: auto;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 3px;
+
 }
 
 
@@ -114,20 +115,22 @@ background-attachment: fixed;
 {
 
   font-family: 'Fjalla One', sans-serif;
-  color: black;
-  font-size: 30px;
+  color: white;
+  font-size: 40px;
   text-align: center;
 
-  border: 4px dotted rgba(74, 145, 227, 0.5);
+  border: 4px outset rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
   float: left;
   max-width: 50%;
+  overflow-x: hidden;
   height: 80%;
   width: 410px;
   padding: 0px;
   margin-left: 257px;
   margin-top: 12px;
   overflow: auto;
-  background-color: rgba(143, 154, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 
   display: block;
 }
@@ -135,8 +138,8 @@ background-attachment: fixed;
 #lit_right
 {
   font-family: 'Fjalla One', sans-serif;
-  color: black;
-  font-size: 30px;
+  color: white;
+  font-size: 40px;
   text-align: center;
 
   position: fixed !important;
@@ -145,12 +148,26 @@ background-attachment: fixed;
   margin-top: 10px;
   margin-left: 690px;
   padding: 10px 10px 10px 10px;
-  border: 6px double rgba(74, 145, 227, 0.5);
+  border: 6px double rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  line-height: 10px;
+  line-height: 38px;
   letter-spacing: 0px;
   margin-bottom: 10px;
-  background-color: rgba(143, 154, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#lit_quote
+{
+  font-family: "Fjalla One";
+  font-size:17px;
+  height: 63%;
+  width: 88%;
+  overflow: auto;
+  border: 2px outset rgba(255, 255, 255, 0.3);
+
+  background-color: rgba(0, 0, 0, 0.08);
+  color:white; scrollbar-base-color: white;
+  line-height: 22px;
+  padding:10px;
 }
 
 #lit_center
@@ -164,7 +181,8 @@ background-attachment: fixed;
 
 #lit_body
 {
-  background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-2.jpg);
+  /*background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-2.jpg);*/
+  background-image: url(https://s-media-cache-ak0.pinimg.com/236x/7a/30/2b/7a302b72dd18efb346c5de88f75fd218.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
