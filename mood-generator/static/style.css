@@ -10,14 +10,16 @@
 #body_index {
 background-image: url(http://webdesigntunes.com/wp-content/uploads/2013/06/white-wood.jpg);
 background-size: cover;
-background-attachment: fixed;}
+background-attachment: fixed;
+}
 
 #home_page_gifs
 {
+  text-align: center;
    height: 580px;
    width: 1050px;
-   margin-left: 250px;
-   margin-right: 250px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .home_gifs
@@ -153,22 +155,21 @@ background-attachment: fixed;}
 
 .beat_pad
 {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
-  height: 210px;
-  width: 415px;
-
+  height: 630px;
+  width: 640px;
+  padding: 2px solid white;
+  border: 2px solid black;
 }
 
 .pad
 {
   height: 200px;
   width: 200px;
-  margin: auto;
-  display: inline-block;;
+  margin: 3px;
+  padding: 2px solid white;
+  display: inline-block;
   text-align: center;
   border: 2px solid black;
 }
@@ -193,11 +194,34 @@ background-attachment: fixed;}
   background: green;
 }
 
-section
+#p5
 {
-  width: 450px;
-  height: 450px;
-  border: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
+  background: purple;
+}
+
+#p6
+{
+  background: indigo;
+}
+
+#p7
+{
+  background: lavender;
+}
+
+#p8
+{
+  background: pink;
+}
+
+#p9
+{
+  background: cyan;
+}
+
+.text
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
