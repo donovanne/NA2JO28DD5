@@ -5,33 +5,18 @@ api_version: 1
 threadsafe: no
 
 handlers:
+- url: /static
+  static_dir: static
+
+- url: /scripts
+  static_dir: scripts
+
+- url: /drum_kit
+  static_dir: drum_kit
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
-
-- url: /style\.css
-  static_files: static/style.css
-  upload: static/style\.css
-
-- url: /trumpad\.js
-  static_files: scripts/trumpad.js
-  upload: scripts/trumpad\.js
-
-- url: /Clap01\.wav
-  static_files: drum_kit/Clap01.wav
-  upload: drum_kit/Clap01\.wav
-
-- url: /Hat01\.wav
-  static_files: drum_kit/Hat01.wav
-  upload: drum_kit/Hat01\.wav
-
-- url: /Kick01\.wav
-  static_files: drum_kit/Kick01.wav
-  upload: drum_kit/Kick01\.wav
-
-- url: /OpenHat01\.wav
-  static_files: drum_kit/OpenHat01.wav
-  upload: drum_kit/OpenHat01\.wav
 
 - url: .*
   script: main.app
