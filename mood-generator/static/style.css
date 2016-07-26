@@ -17,6 +17,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    width: 2000px;
 }
 #scroller ul {
     padding: 0;
@@ -35,10 +36,9 @@
 }
 
 .innerScrollArea{
-width: 200px;
+width: 1000px;
 top: 100px;
 left: 10px;
-width: 200px;
 position: absolute;
 float: left;
 }
