@@ -15,7 +15,8 @@ a
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
-  width: 95.3%;
+  min-width: 100%;
+  width: 100%;
   font-family: 'Fjalla One', sans-serif;
   color: black;
   font-size: 36px;
@@ -37,7 +38,7 @@ a
   margin-right: auto;
   margin-bottom: 5px;
   margin-left: auto;
-  width: 95.3%;
+  width: 90.5%;
   font-family: 'Fjalla One', sans-serif;
   color: black;
   font-size: 60px;
@@ -45,11 +46,6 @@ a
   border: 6px double rgba(255, 255, 255, 0.2) hsla(360, 0%, 0%, 0.83);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
-}
-
-.trumpheader
-{
-
 }
 
 .screw
@@ -80,6 +76,7 @@ a
 
 #index_column_header
 {
+  float: left;
   font-family: 'Fjalla One', sans-serif;
   color: black;
   font-size: 35px;
@@ -87,7 +84,7 @@ a
   text-align: center;
 }
 
-#index_right
+#index_left
 {
   font-family: 'Fjalla One', sans-serif;
   color: black;
@@ -96,17 +93,19 @@ a
 
   position: fixed !important;
   width: 200px;
-  height: 90%;
-  margin-top: 20px;
-  margin-left: 0;
+  height: 800px;
+  margin-right: 80%;
+  margin-left: 30px;
+  margin-bottom: 100px;
+
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   line-height: 38px;
   letter-spacing: 0px;
-  /*margin-bottom: 10px;*/
   background-color: rgba(255, 255, 255, 0.8);
-  /*z-index: 4;*/
+  position:absolute;
+  display: inline-block;
 }
 
 #foreground
@@ -121,7 +120,9 @@ a
     display: block;
 
 }
-#scroller {
+
+#scroller
+{
     position: relative;
     height: 210px;
     top: 10px;
@@ -179,14 +180,17 @@ background-attachment: fixed;
 
 #home_page_gifs
 {
+  overflow-x: hidden;
+  overflow: auto;
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
    /*height: 580px;*/
    height: 100%;
    width: 1050px;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 270px;
+   overflow-y: hidden;
+   /*margin-right: 200px;*/
    position: static;
 }
 
@@ -209,9 +213,6 @@ background-attachment: fixed;
 {
   margin-top: 0px;
   position: absolute;
-  /*right: 100px;
-  left: 240px;
-  top: 0px;*/
   margin-left: auto;
   margin-right: auto;
   height: 100%;
@@ -222,7 +223,6 @@ background-attachment: fixed;
 
 #lit_left
 {
-
   font-family: 'Fjalla One', sans-serif;
   color: white;
   font-size: 40px;
@@ -232,7 +232,7 @@ background-attachment: fixed;
   width: 200px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: -65px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(255, 255, 255, 0.6);
   border-radius: 20px;
@@ -253,10 +253,8 @@ background-attachment: fixed;
 
 }
 
-
 #lit_middle
 {
-
   font-family: 'Fjalla One', sans-serif;
   color: white;
   font-size: 40px;
@@ -270,11 +268,10 @@ background-attachment: fixed;
   height: 80%;
   width: 410px;
   padding: 0px;
-  margin-left: 257px;
+  margin-left: 220px;
   margin-top: 12px;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.2);
-
   display: block;
 }
 
@@ -330,7 +327,6 @@ background-attachment: fixed;
 
 #lit_body
 {
-  /*background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-2.jpg);*/
   background-image: url(https://s-media-cache-ak0.pinimg.com/236x/7a/30/2b/7a302b72dd18efb346c5de88f75fd218.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -349,7 +345,6 @@ background-attachment: fixed;
 
 #happy_left
 {
-
   font-family: 'Fjalla One', sans-serif;
   color: white;
   font-size: 40px;
@@ -367,12 +362,10 @@ background-attachment: fixed;
   letter-spacing: 0px;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.3);
-
 }
 
 #happy_middle
 {
-
   font-family: 'Fjalla One', sans-serif;
   color: white;
   font-size: 40px;
@@ -391,7 +384,6 @@ background-attachment: fixed;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.3);
   display: block;
-
 }
 
 #happy_right
@@ -430,7 +422,6 @@ background-attachment: fixed;
   padding:10px;
 }
 
-
 #sad_body
 {
   background-image: url(http://orig00.deviantart.net/acb6/f/2013/303/7/6/gif___running_through_the_rain_by_turst67-d6scius.gif);
@@ -442,7 +433,6 @@ background-attachment: fixed;
 
 #sad_left
 {
-
   font-family: 'Fjalla One', sans-serif;
   color: black;
   font-size: 40px;
@@ -460,12 +450,10 @@ background-attachment: fixed;
   letter-spacing: 0px;
   margin-bottom: 20px;
   background-color: rgba(0, 1, 61, 0.3);
-
 }
 
 #sad_middle
 {
-
   font-family: 'Fjalla One', sans-serif;
   color: black;
   font-size: 40px;
@@ -484,11 +472,9 @@ background-attachment: fixed;
   overflow: auto;
   background-color: rgba(0, 1, 61, 0.3);
   display: block;
-
 }
 
 #sad_right
-
 {
   font-family: 'Fjalla One', sans-serif;
   color: black;
@@ -641,7 +627,8 @@ hr
 /* the next stuff is for the dropdown menu */
 
 /* Dropdown Button */
-.dropbtn {
+.dropbtn
+{
   display: inline-block;
 
   background-color: white;
