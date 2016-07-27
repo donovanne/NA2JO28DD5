@@ -2,7 +2,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> <!-- for implementing jquery stuff-->
 <script src="/scripts/index.js"></script>
 <!-- jsfiddle -->
-<html>
+<html id="body_index">
 
 <head>
   <link rel="stylesheet" type="text/css" href="/static/style.css">
@@ -11,14 +11,13 @@
 </head>
 
 
-<body id="body_index">
-
+<body>
 
         <div id="home_page_gifs">
 
-          <img id="to_the_back" height=1000px width=1000px src="http://www.vectordiary.com/wp-content/uploads/2013/12/magic-waves.jpg">
-          <div id="foreground">
-          <p class="header">MOOD GENERATOR</p>
+          <img id="to_the_back" src="http://www.vectordiary.com/wp-content/uploads/2013/12/magic-waves.jpg">
+          <!-- <div id="foreground"> -->
+          <h2 class="header">MOOD GENERATOR</h2>
 
           <div id="four_anchors">
           <a href="http://localhost:13080/happy">
@@ -35,7 +34,7 @@
           </a>
         </div>
 
-          <div id="scroller" style="height: 210px; top: 10px;right: 10px; margin: 0 auto;">
+          <div id="scroller">
               <div class="innerScrollArea">
                   <ul>
                       <!-- Define photos here -->
@@ -65,7 +64,7 @@
         "  class="emojis" /></li>
                                 </ul>
                   </div>
-              </div>
+              <!-- </div> -->
           </div>
 
 
