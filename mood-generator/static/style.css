@@ -200,7 +200,7 @@ background-attachment: fixed;
   width: 200px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: -65px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(255, 255, 255, 0.6);
   border-radius: 20px;
@@ -224,7 +224,6 @@ background-attachment: fixed;
 
 #lit_middle
 {
-
   font-family: 'Fjalla One', sans-serif;
   color: white;
   font-size: 40px;
@@ -238,12 +237,12 @@ background-attachment: fixed;
   height: 80%;
   width: 410px;
   padding: 0px;
-  margin-left: 257px;
+  margin-left: 220px;
   margin-top: 12px;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.2);
-
   display: block;
+
 }
 
 #lit_right
@@ -298,7 +297,6 @@ background-attachment: fixed;
 
 #lit_body
 {
-  /*background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-2.jpg);*/
   background-image: url(https://s-media-cache-ak0.pinimg.com/236x/7a/30/2b/7a302b72dd18efb346c5de88f75fd218.jpg);
   background-size: cover;
   background-repeat: no-repeat;
