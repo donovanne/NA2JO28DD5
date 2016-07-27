@@ -11,7 +11,8 @@ var html5_audiotypes={ //define list of audio file extensions and their associat
   "wav": "audio/wav"
 }
 
-function createsoundbite(sound){
+function createsoundbite(sound)
+{
   var html5audio=document.createElement('audio')
   if (html5audio.canPlayType){ //check support for HTML5 audio
     for (var i=0; i<arguments.length; i++){
@@ -34,6 +35,27 @@ function createsoundbite(sound){
   }
 }
 
+/* this function opens the loop selection list in a drop down menu */
+function loop_list()
+{
+  document.getElementById("dropdown_menu").classList.toggle("show");
+}
+
+/* when the user clicks outside the list, this function closes the list */
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown_content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 //Initialize two sound clips with 1 fallback file each:
 
 //var mouseoversound=createsoundbite("whistle.ogg", "whistle.mp3")
@@ -44,6 +66,3 @@ var pad3=createsoundbite("/drum_kit/bum.wav")
 var pad4=createsoundbite("/drum_kit/bongbong.wav")
 var pad5=createsoundbite("/drum_kit/clink.wav")
 var pad6=createsoundbite("/drum_kit/bababababa.wav")
-var pad7=createsoundbite("/drum_kit/Snare01.wav")
-var pad8=createsoundbite("/drum_kit/Tom01.wav")
-var pad9=createsoundbite("/drum_kit/Tom03.wav")

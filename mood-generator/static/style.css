@@ -1,14 +1,38 @@
+body{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .header
 {
+  margin-top: 0px;
   font-family: 'Fjalla One', sans-serif;
-  color: white;
+  color: black;
   font-size: 60px;
   text-align: center;
-  text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+  border: 6px double rgba(255, 255, 255, 0.2) hsla(360, 0%, 0%, 0.83);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
+  margin-bottom: 0px;
 }
 
+#foreground{
+  height: 100%;
+}
+
+#four_anchors{
+  margin-left: -50px;
+    margin-right: auto;
+    display: block;
+
+}
 #scroller {
     position: relative;
+    height: 210px;
+    top: 10px;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;"
 }
 #scroller .innerScrollArea {
     overflow: hidden;
@@ -35,45 +59,59 @@
 }
 
 .innerScrollArea{
-width: 200px;
+width: 1000px;
 top: 100px;
-left: 10px;
-width: 200px;
+left: 20px;
 position: absolute;
 float: left;
 }
 
 #body_index {
-background-image: url(https://s-media-cache-ak0.pinimg.com/736x/93/76/82/937682649cb79ba7f9dc3a2f455d0229.jpg);
+background-image: url(http://wallpapercave.com/wp/qSsmUG2.png);
 background-size: cover;
 background-attachment: fixed;
 }
 
 #home_page_gifs
 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
-   height: 580px;
+   /*height: 580px;*/
+   height: 100%;
    width: 1050px;
    margin-left: auto;
    margin-right: auto;
+   position: static;
 }
 
 .home_gifs
 {
   height: 200px;
   padding: 35px;
-  border: 10px;
-  border-color: rgba(255, 255, 255, 0.8);
-  border-style: solid;
+  /*border: 10px;*/
+  /*border-color: rgba(255, 255, 255, 1);*/
+  border-style: double;
   margin: 10px;
+  border: 10px double rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
+  /*margin-bottom: 0px;*/
 }
 
 #to_the_back
 {
+  margin-top: 0px;
   position: absolute;
-  right: 100px;
+  /*right: 100px;
   left: 240px;
-  top: 0px;
+  top: 0px;*/
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 1000px;
+  display: block;
   z-index: -1;
 }
 
@@ -159,7 +197,11 @@ background-attachment: fixed;
 {
   font-family: "Fjalla One";
   font-size:17px;
+<<<<<<< HEAD
   height: 60%;
+=======
+  height: 63%;
+>>>>>>> 9cb2eef2b249b8600e3c99212ef1260a727ec168
   width: 88%;
   overflow: auto;
   border: 2px outset rgba(255, 255, 255, 0.3);
@@ -385,7 +427,6 @@ background-attachment: fixed;
   height: 200px;
   width: 200px;
   margin: 3px;
-  padding: 2px solid white;
   display: inline-block;
   text-align: center;
   border: 2px solid black;
@@ -442,3 +483,64 @@ background-attachment: fixed;
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* the next stuff is for the dropdown menu */
+
+/* Dropdown Button */
+.dropbtn {
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 100px;
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  left: 100px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown_content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
