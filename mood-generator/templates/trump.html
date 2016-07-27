@@ -8,41 +8,61 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script src="/scripts/trumpad.js"></script>
 </head>
-<body>
+<body background="http://sites.psu.edu/courtneyhummel/wp-content/uploads/sites/31910/2016/01/Trump.jpg">
   <a href="/">
-    <h1 class="banner">Mood Generator<h1>
+    <h1 class="banner">Mood Generator</h1>
   </a>
 
-  <h1 class="header">TrumPad</h1>
-
   <div class="beat_pad">
+    <div class="trumpheader">
+      <img class="screw" id="left_screw" src="/static/screw_head.png" height="15px" width="15px">
+      <p class="header" id="trumpad">TrumPad</p>
+      <img class="screw" id="right_screw" src="/static/screw_head.png" height="15px" width="15px">
+    </div>
+
+    <hr>
+
     <div class="pad" id='p1' onclick="pad1.playclip()">
-      <p class="text">Pad 1</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p2' onclick="pad2.playclip()">
-      <p class="text">Pad 2</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p3' onclick="pad3.playclip()">
-      <p class="text">Pad 3</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p4' onclick="pad4.playclip()">
-      <p class="text">Pad 4</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p5' onclick="pad5.playclip()">
-      <p class="text">Pad 5</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p6' onclick="pad6.playclip()">
-      <p class="text">Pad 6</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p7' onclick="pad7.playclip()">
-      <p class="text">Pad 7</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p8' onclick="pad8.playclip()">
-      <p class="text">Pad 8</p>
+      <div class="glowup"></div>
     </div>
     <div class="pad" id='p9' onclick="pad9.playclip()">
-      <p class="text">Pad 9</p>
+      <div class="glowup"></div>
     </div>
+
+    <hr>
+
+    <!-- play from the keyboard -->
+    $().ready(function()
+    {
+      $('body').on("keyup keydown", function()
+      {
+        if(e.keyCode == 114 || e.keyCode = 121)
+        {
+          $(this).toggleClass("key" + e.keyCode)
+        }
+      })
+    })
 
     <!-- dropdown menu for selecting the optionanl loop accompaniment -->
     <div class="dropdown">
