@@ -13,6 +13,8 @@ var html5_audiotypes={ //define list of audio file extensions and their associat
 
 function createsoundbite(sound)
 {
+  
+
   var html5audio=document.createElement('audio')
   if (html5audio.canPlayType){ //check support for HTML5 audio
     for (var i=0; i<arguments.length; i++){
@@ -66,3 +68,6 @@ var pad3=createsoundbite("/drum_kit/bum.wav")
 var pad4=createsoundbite("/drum_kit/bongbong.wav")
 var pad5=createsoundbite("/drum_kit/clink.wav")
 var pad6=createsoundbite("/drum_kit/bababababa.wav")
+var pad7=createsoundbite("/drum_kit/china.wav")
+var pad8=createsoundbite("/drum_kit/china2.wav")
+var pad9=createsoundbite("/drum_kit/trumpgasm.wav")
