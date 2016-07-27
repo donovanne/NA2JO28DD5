@@ -5,9 +5,9 @@
 //** Call: uniquevar.playclip() to play sound
 
 var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
-  "mp3": "audio/mpeg",
-  "mp4": "audio/mp4",
-  "ogg": "audio/ogg",
+  // "mp3": "audio/mpeg",
+  // "mp4": "audio/mp4",
+  // "ogg": "audio/ogg",
   "wav": "audio/wav"
 }
 
