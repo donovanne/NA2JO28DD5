@@ -2,9 +2,13 @@ body{
   margin-top: 0px;
   margin-bottom: 0px;
 }
+a {
+  text-decoration: none;
+}
 .header
 {
   margin-top: 0px;
+  width: 95.3%;
   font-family: 'Fjalla One', sans-serif;
   color: black;
   font-size: 60px;
@@ -13,7 +17,27 @@ body{
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+}
+#index_right{
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+
+  position: fixed !important;
+  width: 200px;
+  height: 90%;
+  margin-top: 10px;
+  margin-left: 690px;
+  padding: 10px 10px 10px 10px;
+  border: 6px double rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  line-height: 38px;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /*z-index: 4;*/
 }
 
 #foreground{
