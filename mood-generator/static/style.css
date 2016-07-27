@@ -2,9 +2,13 @@ body{
   margin-top: 0px;
   margin-bottom: 0px;
 }
+a {
+  text-decoration: none;
+}
 .header
 {
   margin-top: 0px;
+  width: 95.3%;
   font-family: 'Fjalla One', sans-serif;
   color: black;
   font-size: 60px;
@@ -13,7 +17,35 @@ body{
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+#index_column_header{
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 35px;
+  margin-top: 15px;
+  text-align: center;
+}
+#index_right{
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+
+  position: fixed !important;
+  width: 200px;
+  height: 90%;
+  margin-top: 20px;
+  margin-left: 0;
+  padding: 10px 10px 10px 10px;
+  border: 6px double rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  line-height: 38px;
+  letter-spacing: 0px;
+  /*margin-bottom: 10px;*/
+  background-color: rgba(255, 255, 255, 0.8);
+  /*z-index: 4;*/
 }
 
 #foreground{
@@ -432,12 +464,14 @@ background-attachment: fixed;
 
 .beat_pad
 {
-  margin-left: auto;
-  margin-right: auto;
-  height: 630px;
+  margin: auto;
+  position: relative;
+  height: 694px;
   width: 640px;
   padding: 2px solid white;
-  border: 2px solid black;
+  border:6px solid rgba(0, 1, 61, 0.4);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .pad
@@ -448,6 +482,7 @@ background-attachment: fixed;
   display: inline-block;
   text-align: center;
   border: 2px solid black;
+  border-radius: 12px;
 }
 
 #p1
@@ -507,9 +542,6 @@ background-attachment: fixed;
 /* Dropdown Button */
 .dropbtn {
   display: inline-block;
-  position: absolute;
-  top: 10%;
-  left: 100px;
 
   background-color: #4CAF50;
   color: white;
@@ -522,26 +554,26 @@ background-attachment: fixed;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 
   border: 2px solid black;
+  border-radius: 12px;
   cursor: pointer;
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus
+{
     background-color: #3e8e41;
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.dropdown
+{
+  margin: 3px;
   display: inline-block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 10%;
-  left: 100px;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown_content {
+.dropdown_content
+{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -550,7 +582,8 @@ background-attachment: fixed;
 }
 
 /* Links inside the dropdown */
-.dropdown_content a {
+.dropdown_content a
+{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -558,7 +591,13 @@ background-attachment: fixed;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown_content a:hover {background-color: #f1f1f1}
+.dropdown_content a:hover
+{
+  background-color: #f1f1f1;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show
+{
+  display:block;
+}
