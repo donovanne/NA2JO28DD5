@@ -42,25 +42,34 @@ a
   /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
 }
 
+#index_column_header
+{
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 35px;
+  margin-top: 15px;
+  text-align: center;
+}
+
 #index_right
 {
   font-family: 'Fjalla One', sans-serif;
-  color: white;
-  font-size: 40px;
+  color: black;
+  font-size: 25px;
   text-align: center;
 
   position: fixed !important;
   width: 200px;
   height: 90%;
-  margin-top: 10px;
-  margin-left: 690px;
+  margin-top: 20px;
+  margin-left: 0;
   padding: 10px 10px 10px 10px;
-  border: 6px double rgba(255, 255, 255, 0.6);
+  border: 6px double rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   line-height: 38px;
   letter-spacing: 0px;
-  margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  /*margin-bottom: 10px;*/
+  background-color: rgba(255, 255, 255, 0.8);
   /*z-index: 4;*/
 }
 
@@ -253,11 +262,12 @@ background-attachment: fixed;
   margin-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 #lit_quote
 {
   font-family: "Fjalla One";
   font-size:17px;
-  height: 63%;
+  height: 45%;
   width: 88%;
   overflow: auto;
   border: 2px outset rgba(255, 255, 255, 0.3);
@@ -266,6 +276,11 @@ background-attachment: fixed;
   color:white; scrollbar-base-color: white;
   line-height: 22px;
   padding:10px;
+}
+
+.feedback_button
+{
+  width: 80%;
 }
 
 #lit_center
@@ -364,6 +379,22 @@ background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+#happy_quote
+{
+  font-family: "Fjalla One";
+  font-size:17px;
+  height: 40%;
+  width: 88%;
+  overflow: auto;
+  border: 2px outset rgba(255, 255, 255, 0.3);
+
+  background-color: rgba(0, 0, 0, 0.08);
+  color:white; scrollbar-base-color: white;
+  line-height: 22px;
+  padding:10px;
+}
+
+
 #sad_body
 {
   background-image: url(http://orig00.deviantart.net/acb6/f/2013/303/7/6/gif___running_through_the_rain_by_turst67-d6scius.gif);
@@ -446,10 +477,10 @@ background-attachment: fixed;
 {
   font-family: "Fjalla One";
   font-size:17px;
-  height: 60%;
+  height: 40%;
   width: 88%;
   overflow: auto;
-  border: 2px outset rgba(255, 255, 255, 0.3);
+  border: 2px outset rgba(0, 1, 61, 0.3);
 
   background-color: rgba(255, 255, 255, 0.1);
   color: black;
