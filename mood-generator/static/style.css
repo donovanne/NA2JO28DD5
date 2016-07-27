@@ -229,11 +229,7 @@ background-attachment: fixed;
 {
   font-family: "Fjalla One";
   font-size:17px;
-<<<<<<< HEAD
-  height: 60%;
-=======
-  height: 63%;
->>>>>>> 9cb2eef2b249b8600e3c99212ef1260a727ec168
+  height: 45%;
   width: 88%;
   overflow: auto;
   border: 2px outset rgba(255, 255, 255, 0.3);
