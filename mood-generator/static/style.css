@@ -193,15 +193,12 @@ background-attachment: fixed;
   margin-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 #lit_quote
 {
   font-family: "Fjalla One";
   font-size:17px;
-<<<<<<< HEAD
-  height: 60%;
-=======
-  height: 63%;
->>>>>>> 9cb2eef2b249b8600e3c99212ef1260a727ec168
+  height: 45%;
   width: 88%;
   overflow: auto;
   border: 2px outset rgba(255, 255, 255, 0.3);
@@ -210,6 +207,11 @@ background-attachment: fixed;
   color:white; scrollbar-base-color: white;
   line-height: 22px;
   padding:10px;
+}
+
+.feedback_button
+{
+  width: 80%;
 }
 
 #lit_center
@@ -308,6 +310,22 @@ background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+#happy_quote
+{
+  font-family: "Fjalla One";
+  font-size:17px;
+  height: 40%;
+  width: 88%;
+  overflow: auto;
+  border: 2px outset rgba(255, 255, 255, 0.3);
+
+  background-color: rgba(0, 0, 0, 0.08);
+  color:white; scrollbar-base-color: white;
+  line-height: 22px;
+  padding:10px;
+}
+
+
 #sad_body
 {
   background-image: url(http://orig00.deviantart.net/acb6/f/2013/303/7/6/gif___running_through_the_rain_by_turst67-d6scius.gif);
@@ -390,10 +408,10 @@ background-attachment: fixed;
 {
   font-family: "Fjalla One";
   font-size:17px;
-  height: 60%;
+  height: 40%;
   width: 88%;
   overflow: auto;
-  border: 2px outset rgba(255, 255, 255, 0.3);
+  border: 2px outset rgba(0, 1, 61, 0.3);
 
   background-color: rgba(255, 255, 255, 0.1);
   color: black;
