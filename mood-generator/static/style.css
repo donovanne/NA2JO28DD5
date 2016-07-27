@@ -6,10 +6,13 @@ body{
 {
   margin-top: 0px;
   font-family: 'Fjalla One', sans-serif;
-  color: white;
+  color: black;
   font-size: 60px;
   text-align: center;
-  text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+  border: 6px double rgba(255, 255, 255, 0.2) hsla(360, 0%, 0%, 0.83);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
   margin-bottom: 0px;
 }
 
@@ -21,6 +24,7 @@ body{
   margin-left: -50px;
     margin-right: auto;
     display: block;
+
 }
 #scroller {
     position: relative;
@@ -63,7 +67,7 @@ float: left;
 }
 
 #body_index {
-background-image: url(https://s-media-cache-ak0.pinimg.com/736x/93/76/82/937682649cb79ba7f9dc3a2f455d0229.jpg);
+background-image: url(http://wallpapercave.com/wp/qSsmUG2.png);
 background-size: cover;
 background-attachment: fixed;
 }
@@ -85,10 +89,15 @@ background-attachment: fixed;
 {
   height: 200px;
   padding: 35px;
-  border: 10px;
-  border-color: rgba(255, 255, 255, 0.8);
-  border-style: solid;
+  /*border: 10px;*/
+  /*border-color: rgba(255, 255, 255, 1);*/
+  border-style: double;
   margin: 10px;
+  border: 10px double rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
+  /*margin-bottom: 0px;*/
 }
 
 #to_the_back
