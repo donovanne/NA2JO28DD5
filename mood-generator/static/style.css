@@ -116,9 +116,8 @@ a
 #four_anchors
 {
   margin-left: -50px;
-    margin-right: auto;
-    display: block;
-
+  margin-right: auto;
+  display: block;
 }
 
 #scroller
@@ -207,6 +206,11 @@ background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0.2);
   /*text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;*/
   /*margin-bottom: 0px;*/
+}
+
+.home_gifs:hover
+{
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #to_the_back
