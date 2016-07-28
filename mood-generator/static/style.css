@@ -116,9 +116,8 @@ a
 #four_anchors
 {
   margin-left: -50px;
-    margin-right: auto;
-    display: block;
-
+  margin-right: auto;
+  display: block;
 }
 
 #scroller
@@ -209,6 +208,11 @@ background-attachment: fixed;
   /*margin-bottom: 0px;*/
 }
 
+.home_gifs:hover
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 #to_the_back
 {
   margin-top: 0px;
@@ -229,10 +233,10 @@ background-attachment: fixed;
   text-align: center;
 
   position: fixed !important;
-  width: 200px;
+  width: 300px;
   height: 90%;
   margin-top: 10px;
-  margin-left: -65px;
+  margin-left: -200px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(255, 255, 255, 0.6);
   border-radius: 20px;
@@ -244,8 +248,8 @@ background-attachment: fixed;
 
 .lit_images
 {
-  width: 370px;
-  height: 230px;
+  width: 445px;
+  height: 290px;
   overflow: auto;
   padding-right: 20px;
   padding-left: 20px;
@@ -263,12 +267,12 @@ background-attachment: fixed;
   border: 4px outset rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   float: left;
-  max-width: 50%;
+  max-width: 62%;
   overflow-x: hidden;
   height: 80%;
-  width: 410px;
+  width: 650px;
   padding: 0px;
-  margin-left: 220px;
+  margin-left: 145px;
   margin-top: 12px;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.2);
@@ -283,10 +287,10 @@ background-attachment: fixed;
   text-align: center;
 
   position: fixed !important;
-  width: 200px;
+  width: 300px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 690px;
+  margin-left: 685px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(255, 255, 255, 0.6);
   border-radius: 20px;
@@ -300,7 +304,7 @@ background-attachment: fixed;
 {
   font-family: "Fjalla One";
   font-size:17px;
-  height: 45%;
+  height: 55%;
   width: 88%;
   overflow: auto;
   border: 2px outset rgba(255, 255, 255, 0.3);
@@ -351,10 +355,10 @@ background-attachment: fixed;
   text-align: center;
 
   position: fixed !important;
-  width: 200px;
+  width: 270px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: -160px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(207, 12, 12, 0.51);
   border-radius: 20px;
@@ -374,12 +378,12 @@ background-attachment: fixed;
   border: 4px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   float: left;
-  max-width: 50%;
+  max-width: 59%;
   overflow-x: hidden;
   height: 80%;
-  width: 410px;
+  width: 620px;
   padding: 0px;
-  margin-left: 257px;
+  margin-left: 155px;
   margin-top: 12px;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.3);
@@ -394,10 +398,10 @@ background-attachment: fixed;
   text-align: center;
 
   position: fixed !important;
-  width: 200px;
+  width: 280px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 690px;
+  margin-left: 670px;
   padding: 10px 10px 10px 10px;
   border: 6px double rgba(247, 247, 24, 0.61);
   border-radius: 20px;
@@ -439,10 +443,10 @@ background-attachment: fixed;
   text-align: center;
 
   position: fixed !important;
-  width: 200px;
+  width: 310px;
   height: 90%;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: -220px;
   padding: 10px 10px 10px 10px;
   border: 6px solid rgba(0, 1, 61, 0.4);
   border-radius: 20px;
@@ -462,12 +466,12 @@ background-attachment: fixed;
   border: 6px solid rgba(0, 1, 61, 0.5);
   border-radius: 20px;
   float: left;
-  max-width: 50%;
+  max-width: 63%;
   overflow-x: hidden;
   height: 80%;
-  width: 410px;
+  width: 560px;
   padding: 0px;
-  margin-left: 257px;
+  margin-left: 130px;
   margin-top: 12px;
   overflow: auto;
   background-color: rgba(0, 1, 61, 0.3);
@@ -482,7 +486,7 @@ background-attachment: fixed;
   text-align: center;
 
   position: fixed !important;
-  width: 200px;
+  width: 270px;
   height: 90%;
   margin-top: 10px;
   margin-left: 690px;
