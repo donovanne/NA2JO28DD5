@@ -6,9 +6,9 @@
 
 var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
   "mp3": "audio/mpeg",
+  "ogg": "audio/ogg",
   "wav": "audio/wav"
   // "mp4": "audio/mp4",
-  // "ogg": "audio/ogg",
 }
 
 function createsoundbite(sound)
@@ -62,12 +62,12 @@ window.onclick = function(event) {
 
 //var mouseoversound=createsoundbite("whistle.ogg", "whistle.mp3")
 
-var pad1=createsoundbite("/drum_kit/bingbing.wav", "/drum_kit/bingbing.mp3")
-var pad2=createsoundbite("/drum_kit/bingbing2.wav", "/drum_kit/bingbing2.mp3")
-var pad3=createsoundbite("/drum_kit/bum.wav", "/drum_kit/bum.mp3")
-var pad4=createsoundbite("/drum_kit/bongbong.wav", "/drum_kit/bongbong.mp3")
-var pad5=createsoundbite("/drum_kit/clink.wav", "/drum_kit/clink.mp3")
-var pad6=createsoundbite("/drum_kit/bababababa.wav", "/drum_kit/bababababa.mp3")
-var pad7=createsoundbite("/drum_kit/china.wav", "/drum_kit/china.mp3")
-var pad8=createsoundbite("/drum_kit/china2.wav", "/drum_kit/china2.mp3")
-var pad9=createsoundbite("/drum_kit/trumpgasm.wav", "/drum_kit/trumpgasm.mp3")
+var pad1=createsoundbite("/drum_kit/bingbing.wav", "/drum_kit/bingbing.mp3", "/drum_kit/bingbing.ogg")
+var pad2=createsoundbite("/drum_kit/bingbing2.wav", "/drum_kit/bingbing2.mp3", "/drum_kit/bingbing2.ogg")
+var pad3=createsoundbite("/drum_kit/bum.wav", "/drum_kit/bum.mp3", "/drum_kit/bum.ogg")
+var pad4=createsoundbite("/drum_kit/bongbong.wav", "/drum_kit/bongbong.mp3", "/drum_kit/bongbong.ogg")
+var pad5=createsoundbite("/drum_kit/clink.wav", "/drum_kit/clink.mp3", "/drum_kit/clink.ogg")
+var pad6=createsoundbite("/drum_kit/bababababa.wav", "/drum_kit/bababababa.mp3", "/drum_kit/bababababa.ogg")
+var pad7=createsoundbite("/drum_kit/china.wav", "/drum_kit/china.mp3", "/drum_kit/china.ogg")
+var pad8=createsoundbite("/drum_kit/china2.wav", "/drum_kit/china2.mp3", "/drum_kit/china2.ogg")
+var pad9=createsoundbite("/drum_kit/trumpgasm.wav", "/drum_kit/trumpgasm.mp3", "/drum_kit/trumpgasm.ogg")
